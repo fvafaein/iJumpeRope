@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alphaking.ijumprope"
+    android:versionCode="2"
+    android:versionName="1.1" >
+<uses-feature android:name="android.hardware.sensor.accelerometer" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+               
+        <activity
+             android:screenOrientation="portrait"
+            android:name="com.alphaking.ijumprope.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.STARTINGPOINTSZ" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.alphaking.ijumprope.Settings"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.alphaking.ijumprope.Start"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.alphaking.ijumprope.Logs"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.alphaking.ijumprope.About"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.alphaking.ipushup.Logs"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:screenOrientation="portrait"
+            android:name="com.alphaking.ijumprope.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
